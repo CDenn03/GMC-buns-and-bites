@@ -1,65 +1,97 @@
 :root {
   --primary-text-color: #1D0E02;
-}
-body {
-  background-color: #FFF7EC;
-  color: var(--primary-text-color);
-}
-.navbar {
-  background-color: #FFF7EC;
-}
-.navbar-brand, .nav-link {
-  color: var(--primary-text-color) !important;
-}
-.carousel, .carousel-inner {
-  height: 100%;
-}
-.carousel-inner .c-item {
-  height: 400px;
-}
-.c-img {
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(0.6);
-}
-.carousel-caption {
-  margin-top: 160px;
-  color: #fff;
-  padding: 10px;
-  border-radius: 5px;
-}
-footer a {
-  color: #fff !important;
-}
-a {
-  color: var(--primary-text-color);
-}
-a:hover {
-  color: #3b2a0a;
+  --primary-bg-color: #FFF7EC;
+  --button-color: #FE6E0C;
 }
 
-/* menu card styling */
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+
+.navbar {
+  background-color: var(--primary-bg-color);
+}
+
+.navbar-brand {
+  color: var(--button-color) !important;
+}
+.nav-link {
+  color: var(--primary-text-color) !important;
+}
+.nav-link:hover {
+  color: var(--button-color) !important;
+}
+
+.hero {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+  height: 700px;
+}
+
+.hero h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 .card {
   height: 500px;
   display: flex;
   flex-direction: column;
 }
+
 .card-img-top {
   height: 300px;
   object-fit: cover;
 }
+
 .card-body {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
 .card-text {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.nav-pills .nav-link {
+  color: var(--primary-text-color);
+}
+
+.nav-pills .nav-link.active {
+  background-color: var(--primary-text-color);
+  color: #fff !important;
+}
+
+footer a {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+a {
+  color: var(--primary-text-color);
+}
+
+a:hover {
+  color: #3b2a0a;
+}
+
 @media (min-width: 768px) {
-  .carousel-inner .c-item {
-    height: 500px;
+  .hero {
+    min-height: 600px;
   }
+}
+.btn {
+  background-color: var(--button-color);
+  border-color: var(--primary-text-color);
+}
+.btn:hover {
+  background-color: var(--primary-text-color);
+  border-color: wheat;
+}
+.img-fluid {
+  height: 500px;
+  width: auto;
 }
