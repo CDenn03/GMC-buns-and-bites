@@ -3,9 +3,153 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="description" content="Buns n Bites - Delicious burgers, fries, and desserts. Explore our menu and visit us today!">
+  <meta name="keywords" content="restaurant, burgers, food, Buns n Bites, menu">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <title>Buns n Bites</title>
 </head>
 <body>
-  
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">Buns n Bites</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero section with carousel -->
+  <main>
+    <section class="hero">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item c-item active">
+            <img src="./images/food 1.jpg" class="d-block w-100 c-img" alt="Close-up of a juicy burger with fresh lettuce and tomato">
+            <div class="carousel-caption top-0">
+              <h5 class="fs-1 fw-bold">Savor the Taste of Perfection</h5>
+              <p>Try our mouth-watering fish fillet with fresh ingredients.</p>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="./images/food 2.jpg" class="d-block w-100 c-img" alt="Plate of crispy golden fries with dipping sauce">
+            <div class="carousel-caption top-0">
+              <h5 class="fs-1 fw-bold">Savor the Taste of Perfection</h5>
+              <p>Soft, freshly baked buns paired with a healthy salad.</p>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="./images/food 3.jpg" class="d-block w-100 c-img" alt="Freshly baked bun with a side of salad">
+            <div class="carousel-caption top-0">
+              <h5 class="fs-1 fw-bold">Savor the Taste of Perfection</h5>
+              <p>Our delicious cinammom pumkin sauce appetizer .</p>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="./images/food 4.jpg" class="d-block w-100 c-img" alt="Decadent chocolate dessert with whipped cream">
+            <div class="carousel-caption top-0">
+              <h5 class="fs-1 fw-bold">Savor the Taste of Perfection</h5>
+              <p>Indulge in our sweet treats, perfect for any occasion.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Menu section -->
+    <section id="menu" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Our Menu</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./images/menu/burger.jpg" class="card-img-top" alt="Classic Burger">
+              <div class="card-body">
+                <h5 class="card-title">Classic Burger</h5>
+                <p class="card-text">Juicy beef patty with lettuce, tomato, and special sauce.</p>
+                <a href="#" class="btn btn-primary">Order Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./images/menu/pizza.jpg" class="card-img-top" alt="Classic Burger">
+              <div class="card-body">
+                <h5 class="card-title">Pizza</h5>
+                <p class="card-text">Juicy beef patty with lettuce, tomato, and special sauce.</p>
+                <a href="#" class="btn btn-primary">Order Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./images/menu/shawarma.jpg" class="card-img-top" alt="Classic Burger">
+              <div class="card-body">
+                <h5 class="card-title">Shawarma</h5>
+                <p class="card-text">Juicy beef patty with lettuce, tomato, and special sauce.</p>
+                <a href="#" class="btn btn-primary">Order Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">About Us</h2>
+        <p>Buns n Bites is your go-to spot for delicious burgers, fries, and desserts. Our passion for fresh ingredients and bold flavors ensures every bite is a delight. Join us for a meal that warms the heart and soul!</p>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <p class="text-center">Reach out to us at <a href="mailto:info@bunsnbites.com">info@bunsnbites.com</a> or visit us at 123 Flavor Street, Food City.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p>&copy; 2025 Buns n Bites. All rights reserved.</p>
+      <p>Contact: <a href="mailto:info@bunsnbites.com" class="text-white">info@bunsnbites.com</a> | Follow us on <a href="https://x.com" class="text-white">X</a></p>
+    </div>
+  </footer>
 </body>
 </html>
